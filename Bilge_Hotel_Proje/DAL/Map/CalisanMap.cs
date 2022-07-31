@@ -19,7 +19,7 @@ namespace DAL.Map
             Property(x => x.Email).HasMaxLength(50).IsRequired();
             Property(x => x.Password).HasMaxLength(50).IsRequired();
             Property(x => x.SaatSayisi).IsOptional();
-            Property(x => x.VardiyaID).IsOptional();
+            Property(x => x.VardiyaZamani).IsOptional();
            
             //Property(x => x.Gorev.ToString()).IsRequired();
             Property(x => x.Ucret).IsOptional();

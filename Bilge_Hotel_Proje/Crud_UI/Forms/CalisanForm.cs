@@ -42,7 +42,7 @@ namespace Crud_UI.Forms
                 lvi.SubItems.Add(calisan.Email);
                 lvi.SubItems.Add(calisan.Ucret.ToString());
                 lvi.SubItems.Add(calisan.SaatSayisi.ToString());
-                lvi.SubItems.Add(calisan.VardiyaID.ToString());
+                
                 lvi.SubItems.Add(calisan.Maas.ToString());
                 lvi.SubItems.Add(calisan.Gorev);
                 lstCalisan.Items.Add(lvi);
@@ -88,14 +88,7 @@ namespace Crud_UI.Forms
                 calisan.Gorev = txtgorev.Text;
                 calisan.SaatSayisi = Convert.ToInt32(nudSaat.Value);
               
-                if (txtvardiyaId.Text == "")
-                {
-                    calisan.VardiyaID = null;
-                }
-                else
-                {
-                    calisan.VardiyaID = Convert.ToInt32(txtvardiyaId.Text);
-                }
+                
                
                 string result = calisanRepository.Create(calisan);
                 MessageBox.Show(result);
@@ -160,10 +153,7 @@ namespace Crud_UI.Forms
 
 
 
-                if (txtvardiyaId.Text != "")
-                {
-                    updated.VardiyaID = Convert.ToInt32(txtvardiyaId.Text);
-                }
+                
 
 
                 string result = calisanRepository.Update(updated);

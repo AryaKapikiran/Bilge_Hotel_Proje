@@ -20,7 +20,7 @@ namespace DAL.Entity
 
         public string LastName { get; set; }
 
-        public int? VardiyaID { get; set; }
+        public VardiyaZamani? VardiyaZamani { get; set; }
 
         public int SaatSayisi { get; set; }
 
@@ -46,15 +46,20 @@ namespace DAL.Entity
                 if (Gorev.Contains("yönetici"))
                 {
                     _maas = Ucret;
+                    SaatSayisi = 0;
+
 
                 }
-               else if (Gorev.Contains("yonetici"))
+                else if (Gorev.Contains("yonetici"))
                 {
                     _maas = Ucret;
+                    SaatSayisi = 0;
+
                 }
                 else if (Gorev.Contains("sorumlusu"))
                 {
                     _maas = Ucret;
+                    SaatSayisi = 0;
                 }
 
                 else
@@ -67,9 +72,9 @@ namespace DAL.Entity
             set { _maas = value; }
         }
 
-        //1 calisanın 1 vardiyası olur
+        
 
-        public Vardiya Vardiya { get; set; }
+        
 
 
     }

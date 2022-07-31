@@ -63,11 +63,17 @@
     <Compile Include="Forms\CalisanForm.Designer.cs">
       <DependentUpon>CalisanForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MenuForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MenuForm.Designer.cs">
-      <DependentUpon>MenuForm.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IKForm.Designer.cs">
+      <DependentUpon>IKForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MusteriForm.cs">
       <SubType>Form</SubType>
@@ -75,11 +81,23 @@
     <Compile Include="Forms\MusteriForm.Designer.cs">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OdaDurumuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OdaDurumuForm.Designer.cs">
+      <DependentUpon>OdaDurumuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OdaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\OdaForm.Designer.cs">
       <DependentUpon>OdaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResepsiyonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResepsiyonForm.Designer.cs">
+      <DependentUpon>ResepsiyonForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RezervasyonForm.cs">
       <SubType>Form</SubType>
@@ -87,31 +105,67 @@
     <Compile Include="Forms\RezervasyonForm.Designer.cs">
       <DependentUpon>RezervasyonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SatisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SatisForm.Designer.cs">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TatilPaketiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TatilPaketiForm.Designer.cs">
+      <DependentUpon>TatilPaketiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\VardiyaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\VardiyaForm.Designer.cs">
       <DependentUpon>VardiyaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\VardiyaListesiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VardiyaListesiForm.Designer.cs">
+      <DependentUpon>VardiyaListesiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\CalisanForm.resx">
       <DependentUpon>CalisanForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuForm.resx">
-      <DependentUpon>MenuForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IKForm.resx">
+      <DependentUpon>IKForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OdaDurumuForm.resx">
+      <DependentUpon>OdaDurumuForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\OdaForm.resx">
       <DependentUpon>OdaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResepsiyonForm.resx">
+      <DependentUpon>ResepsiyonForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RezervasyonForm.resx">
       <DependentUpon>RezervasyonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SatisForm.resx">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TatilPaketiForm.resx">
+      <DependentUpon>TatilPaketiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\VardiyaForm.resx">
       <DependentUpon>VardiyaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VardiyaListesiForm.resx">
+      <DependentUpon>VardiyaListesiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

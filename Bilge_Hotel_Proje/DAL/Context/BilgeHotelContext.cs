@@ -24,7 +24,7 @@ namespace DAL.Context
 
         public DbSet<Rezervasyon> Rezervasyonlar { get; set; }
         public DbSet<TatilPaketi> TatilPaketleri { get; set; }
-        public DbSet<Vardiya> Vardiyalar { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -34,7 +34,7 @@ namespace DAL.Context
             modelBuilder.Configurations.Add(new OdaMap());
             modelBuilder.Configurations.Add(new RezervasyonMap());
             modelBuilder.Configurations.Add(new TatilPaketiMap());
-            modelBuilder.Configurations.Add(new VardiyaMap());
+            
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtvardiyaId = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtgorev = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtucret = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtsifre = new System.Windows.Forms.TextBox();
@@ -55,11 +55,8 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtgorev = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSaat)).BeginInit();
             this.SuspendLayout();
@@ -68,8 +65,6 @@
             // 
             this.groupBox1.Controls.Add(this.txtgorev);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtvardiyaId);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtucret);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtsifre);
@@ -94,21 +89,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Çalışanlar";
             // 
-            // txtvardiyaId
+            // txtgorev
             // 
-            this.txtvardiyaId.Location = new System.Drawing.Point(150, 341);
-            this.txtvardiyaId.Name = "txtvardiyaId";
-            this.txtvardiyaId.Size = new System.Drawing.Size(215, 26);
-            this.txtvardiyaId.TabIndex = 18;
+            this.txtgorev.Location = new System.Drawing.Point(161, 372);
+            this.txtgorev.Name = "txtgorev";
+            this.txtgorev.Size = new System.Drawing.Size(215, 26);
+            this.txtgorev.TabIndex = 20;
             // 
-            // label8
+            // label9
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 347);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 20);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Vardiya ID";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 372);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 20);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Görev";
             // 
             // txtucret
             // 
@@ -160,7 +155,7 @@
             // 
             // nudSaat
             // 
-            this.nudSaat.Location = new System.Drawing.Point(219, 411);
+            this.nudSaat.Location = new System.Drawing.Point(218, 340);
             this.nudSaat.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -183,7 +178,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 413);
+            this.label4.Location = new System.Drawing.Point(6, 340);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(206, 20);
             this.label4.TabIndex = 9;
@@ -207,7 +202,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(271, 500);
+            this.btnDelete.Location = new System.Drawing.Point(271, 430);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 45);
             this.btnDelete.TabIndex = 6;
@@ -217,7 +212,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(150, 500);
+            this.btnUpdate.Location = new System.Drawing.Point(150, 430);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(105, 45);
             this.btnUpdate.TabIndex = 5;
@@ -227,7 +222,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(15, 500);
+            this.btnAdd.Location = new System.Drawing.Point(6, 430);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(119, 45);
             this.btnAdd.TabIndex = 4;
@@ -276,7 +271,6 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6,
-            this.columnHeader7,
             this.columnHeader8,
             this.columnHeader9});
             this.lstCalisan.GridLines = true;
@@ -316,12 +310,7 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Saat Sayısı";
-            this.columnHeader6.Width = 91;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Vardiya ID";
-            this.columnHeader7.Width = 106;
+            this.columnHeader6.Width = 143;
             // 
             // columnHeader8
             // 
@@ -332,22 +321,6 @@
             // 
             this.columnHeader9.Text = "Görev";
             this.columnHeader9.Width = 163;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 461);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 20);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Görev";
-            // 
-            // txtgorev
-            // 
-            this.txtgorev.Location = new System.Drawing.Point(150, 455);
-            this.txtgorev.Name = "txtgorev";
-            this.txtgorev.Size = new System.Drawing.Size(215, 26);
-            this.txtgorev.TabIndex = 20;
             // 
             // CalisanForm
             // 
@@ -379,8 +352,6 @@
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtvardiyaId;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtucret;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtsifre;
@@ -395,7 +366,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.TextBox txtgorev;

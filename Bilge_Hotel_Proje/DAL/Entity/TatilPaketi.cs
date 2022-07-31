@@ -11,15 +11,9 @@ namespace DAL.Entity
     {
         public int TatilPaketiID { get; set; }
 
-      
-
         public string TatilPaketiName { get; set; }
 
         public decimal Fiyat { get; set; }
-
-      
-
-
 
         public List<Rezervasyon> Rezervasyonlar { get; set; }
 

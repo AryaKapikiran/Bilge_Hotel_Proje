@@ -58,7 +58,7 @@
     <Compile Include="Entity\Oda.cs" />
     <Compile Include="Entity\Rezervasyon.cs" />
     <Compile Include="Entity\TatilPaketi.cs" />
-    <Compile Include="Entity\Vardiya.cs" />
+    <Compile Include="Enums\VardiyaZamani.cs" />
     <Compile Include="Enums\OdaDurumu.cs" />
     <Compile Include="Enums\OdaTipiName.cs" />
     <Compile Include="Map\CalisanMap.cs" />
@@ -66,7 +66,6 @@
     <Compile Include="Map\OdaMap.cs" />
     <Compile Include="Map\RezervasyonMap.cs" />
     <Compile Include="Map\TatilPaketiMap.cs" />
-    <Compile Include="Map\VardiyaMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

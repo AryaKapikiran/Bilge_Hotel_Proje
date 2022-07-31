@@ -1,5 +1,6 @@
 ﻿using BLL.Repository;
 using DAL.Entity;
+using DAL.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,22 +20,39 @@ namespace Crud_UI.Forms
             InitializeComponent();
         }
 
-        BaseRepository<Vardiya> vardiyaRepository = new BaseRepository<Vardiya>();
+        BaseRepository<Calisan> vardiyaRepository = new BaseRepository<Calisan>();
 
         //Listeleme Metotu
         private void VardiyaListele()
         {
             lvVardiya.Items.Clear();
-            List<Vardiya> vardiyalar = vardiyaRepository.GetList();
-            foreach(Vardiya vardiya in vardiyalar)
-            {
-                ListViewItem lvi = new ListViewItem();
-                lvi.Text = vardiya.VardiyaID.ToString();
-                lvi.SubItems.Add(vardiya.Baslangic.ToString());
-                lvi.SubItems.Add(vardiya.Bitis.ToString());
-                lvVardiya.Items.Add(lvi);
+            cmbVardiya.Items.Clear();
+            cmbVardiya.Text = "";
+            List<Calisan> calisanlar = vardiyaRepository.GetList();
+            List<VardiyaZamani> vardiyazamanlari = Enum.GetValues(typeof(VardiyaZamani)).Cast<VardiyaZamani>().ToList();
 
+            foreach (Calisan calisan in calisanlar)
+            {
+                
+                    ListViewItem lvi = new ListViewItem();
+                    lvi.Text = calisan.CalisanID.ToString();
+                    lvi.SubItems.Add(calisan.FirstName);
+                    lvi.SubItems.Add(calisan.VardiyaZamani.ToString());
+                    lvVardiya.Items.Add(lvi);
+                
+                
             }
+
+            foreach(VardiyaZamani vardiyaZamani in vardiyazamanlari)
+            {
+                cmbVardiya.Items.Add(vardiyaZamani);
+                cmbVardiya.Tag = vardiyaZamani;
+            }
+
+
+
+
+
         }
 
        
@@ -45,101 +63,48 @@ namespace Crud_UI.Forms
         }
         //Vardiya Ekle
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-           Vardiya vardiya = new Vardiya();
-            try
-            {
-                if (dtbaslangic.Value < DateTime.Now || dtbitis.Value <= DateTime.Now)
-                {
-                    MessageBox.Show("Lütfen ileri tarih giriniz");
-                }
-                else
-                {
-                    vardiya.Baslangic = dtbaslangic.Value;
-                    vardiya.Bitis = dtbitis.Value;
-                    string result = vardiyaRepository.Create(vardiya);
-                    MessageBox.Show(result);
-                }
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
-
-
-            VardiyaListele();
-
-            dtbaslangic.Value = DateTime.Now;
-            dtbitis.Value = DateTime.Now;
-
-
-        }
+       
         //Güncelleme 
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtid.Text != "")
+                if(txtid.Text!="")
                 {
-                    int deger;
-                    deger = Convert.ToInt32(txtid.Text);
-                    Vardiya updated = vardiyaRepository.FindById(deger);
-                    if (dtbaslangic.Value <= DateTime.Now && dtbitis.Value <= DateTime.Now || dtbaslangic.Value > dtbitis.Value)
+                    if(cmbVardiya.Text!="")
                     {
-                        MessageBox.Show("Tarih güncellemek için Lütfen ileri tarih giriniz");
-                    }
-                    else
-                    {
-                        updated.Baslangic = dtbaslangic.Value;
-                        updated.Bitis = dtbitis.Value;
+                        int deger;
+                        deger = Convert.ToInt32(txtid.Text);
+                        Calisan updated = vardiyaRepository.FindById(deger);
+                        updated.VardiyaZamani = (VardiyaZamani)cmbVardiya.SelectedIndex;
                         string result = vardiyaRepository.Update(updated);
                         MessageBox.Show(result);
+
                     }
+                   
                 }
 
                 else
                 {
-                    MessageBox.Show("Güncelleme yapabilmek için id giriniz");
-                }
+                    MessageBox.Show("Vardiya zamanlarını degistirmek icin lütfen id giriniz.");
+                    }
             }
-
-            catch(Exception ex)
+            catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
             }
             
-           
            
             
             VardiyaListele();
 
-            dtbaslangic.Value = DateTime.Now;
-            dtbitis.Value = DateTime.Now;
-        }
-
-        //Silme
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int deger;
-                deger = Convert.ToInt32(txtid.Text);
-                string result = vardiyaRepository.Delete(deger);
-                MessageBox.Show(result);
-                VardiyaListele();
-            }
-
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
             
-
         }
+
+       
+
+       
     }
 }

@@ -18,33 +18,24 @@
         protected override void Seed(DAL.Context.BilgeHotelContext context)
         {
            
-            //Vardiya
+            
 
 
-            //todo: 3 tip vardiya sistemine gecilecek
-            List<Vardiya> vardiyalar = new List<Vardiya>()
-            {
-                new Vardiya{ Baslangic= DateTime.Now, Bitis=DateTime.Now },
-                new Vardiya{Baslangic=DateTime.Now, Bitis=DateTime.Now}
-
-
-            };
-            if (!context.Vardiyalar.Any())
-            {
-                foreach (var vardiya in vardiyalar)
-                {
-                    context.Vardiyalar.Add(vardiya);
-                    context.SaveChanges();
-                }
-            }
+           
 
             //Calisanlar
             List<Calisan> calisanlar = new List<Calisan>()
             {
-                new Calisan{ FirstName="Selahattin", LastName="Alkomut", Email="s.alkomut@bilgeotel.com", Gorev= "İnsanKaynakları yöneticisi",Password="1234"/*Maas=8500,*/,Ucret=12000 },
-                 new Calisan{FirstName="Levent", LastName="Sişarpsoy", Email="l.sisarpsoy@bilgeotel.com", Gorev="Satış yöneticisi",Password="1234"/*Maas=7500,*/,Ucret=14000},
-                  new Calisan{ FirstName="Mehmet", LastName="Temiz", Email="m.temiz@bilgeotel.com", Gorev="Temizlik Görevlisi",Password="1234",Ucret=200,SaatSayisi=15,VardiyaID=1},
-                  new Calisan{ FirstName="Sevim", LastName="Parlak", Email="s.parlak@bilgeotel.com", Gorev="Temizlik Görevlisi",Password="1234",Ucret=200,SaatSayisi=10,VardiyaID=2}
+                new Calisan{ FirstName="Selahattin", LastName="Alkomut", Email="s.alkomut@bilgeotel.com", Gorev= "İnsan Kaynakları yöneticisi",Password="1234"/*Maas=8500,*/,Ucret=12000 },
+                 new Calisan{FirstName="Levent", LastName="Sişarpsoy", Email="l.sisarpsoy@bilgeotel.com", Gorev="Satış/Otel yöneticisi",Password="1234"/*Maas=7500,*/,Ucret=34000},
+                  new Calisan{ FirstName="Mehmet", LastName="Temiz", Email="m.temiz@bilgeotel.com", Gorev="Temizlik Görevlisi",Password="1234",Ucret=200,SaatSayisi=15,VardiyaZamani=Enums.VardiyaZamani.Ogle},
+                  new Calisan{ FirstName="Sevim", LastName="Parlak", Email="s.parlak@bilgeotel.com", Gorev="Temizlik Görevlisi",Password="1234",Ucret=200,SaatSayisi=10,VardiyaZamani=Enums.VardiyaZamani.Sabah},
+                  new Calisan {FirstName="Seyfettin",LastName="Karadibag",Ucret=20000, Email="s.karadibag@bilgeotel.com", Password="1234",Gorev="IT sorumlusu"},
+                  new Calisan {FirstName="Gülay",LastName="Aydınlık",Ucret=8000, Email="g.aydinlik@bilgeotel.com", Password="1234",Gorev="Resepsiyon sorumlusu"},
+                  new Calisan {FirstName="Ayşe",LastName="Kayıt",Ucret=500,SaatSayisi=10, Email="a.kayit@bilgeotel.com", Password="1234",Gorev="Resepsiyon görevlisi"}
+
+
+
 
 
             };
