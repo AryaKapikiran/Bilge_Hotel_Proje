@@ -1,5 +1,10 @@
-﻿--Data Access Layerda 5 tane classımız var(hopefully,finally) 
+﻿--Data Access Layerda 5 tane classımız var(hopefully,finally) Bunlar Calisanlar,Musteriler,Oda,Rezervasyon ve Tatil paketi... Calısanların vardiya zamanlarını secmemize yardımcı olan bir enum classımız var, bunlar sabah öğle aksam ve tam zamanlı olarak 4 e ayrılıyor, Ayrıca otel farklı bir vardiya şekline gecmek isterse bunlar enumlar yoluyla kolayca halledilebilinir.
 
+    ====>Çalışanlar eger sistemde yönetici veya sorumlu olarak geciyorlarsa bu calısanların maasları sadece ucret uzerinden hesaplanıyor, çünkü bunlar tam zamanlı çalısanlar sayılırlar. Diğer calısanların maası ise calıstıkları saat sayısı ve ucretin carpılması sonucu elde edilir. Bu sistem saat sayısının guncellenip aylık verilecek maasların düzenlenmesi açısından kullanışlıdır.
+    ====>Odalar icerisinde odanın durumu ve tipine dair iki adet enum bulunur. Oda durumu, rezervasyonlar yapıldıgında resepsiyon calısanlarının sisteme giriş yapıp oda durumunu kontrol etmeleri/degistirmeleri icin yapılmıs bir enumdır, aynı zamanda bu odalar bakımda ise sistemde resepsiyon çalısanları tarafından durum güncellenebilir. 
+
+    ====>Veritabanına codefirst taraflı birkaç veri ekleniyor, bunlar aynı zamanda sistemi oluşturan kemik veriler fakat hepsi uygulama üstünden düzenlenebilir güncellenebilir ve silinebilir.
+    
 
 
 --Login

@@ -14,7 +14,9 @@ namespace DAL.Entity
         {
             RezervasyonTarihi = DateTime.Now;
             
-
+            
+            
+            
 
 
         }

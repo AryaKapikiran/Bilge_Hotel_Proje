@@ -1,4 +1,5 @@
-﻿using DAL.Context;
+﻿using BLL.Repository;
+using DAL.Context;
 using DAL.Entity;
 using System;
 using System.Collections.Generic;
@@ -20,14 +21,22 @@ namespace Crud_UI.Forms
         }
 
         //Emailler ve sifreler database ve dısarıdan girilen ile esitleniyor ve sistem karar yapılarıyla kontrol ediliyor, eger text boxlara veri girildiyse, girilen verilerdeki email ve sifreler sistemdekiyle eslesiyor mu diye kontrol ediliyor daha sonra bu emaillerin eslestiği gorevlere gore formlara yonlendiriliyor 
+        
         BilgeHotelContext db = new BilgeHotelContext();
+        
+       
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            Calisan calisan = db.Calisanlar.FirstOrDefault(x => x.Email == txtemail.Text);
+           
+            
+            Calisan calisan = db.Calisanlar.FirstOrDefault(x => x.Email == txtemail.Text & x.Password == txtsifre.Text);
+
             if (txtemail.Text != "" && txtsifre.Text != "")
             {
-                if (txtemail.Text == calisan.Email && txtsifre.Text == calisan.Password)
+                
+                if (db.Calisanlar.Any(x=>x.Email == txtemail.Text & x.Password == txtsifre.Text))
                 {
                     if (calisan.Gorev == "İnsan Kaynakları yöneticisi")
                     {
@@ -36,7 +45,6 @@ namespace Crud_UI.Forms
                         ikform.Show();
                         this.Hide();
                     }
-
 
 
 
@@ -78,10 +86,15 @@ namespace Crud_UI.Forms
                 }
 
 
-                else
+                else if(!db.Calisanlar.Any(x=>x.Email==txtemail.Text))
                 {
-                    MessageBox.Show("Bilgiler hatalı lütfen bilgilerinizi kontrol ediniz");
+                    MessageBox.Show("Email hatalı lütfen bilgilerinizi kontrol ediniz");
                 }
+                else if(!db.Calisanlar.Any(x => x.Password == txtsifre.Text))
+                {
+                    MessageBox.Show("Şifre hatalı lütfen bilgilerinizi kontrol ediniz");
+                }
+               
 
              }
                 else
