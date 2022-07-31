@@ -19,7 +19,7 @@ namespace Crud_UI.Forms
             InitializeComponent();
         }
 
-        //Emailler ve sifreler database ve dısarıdan girilen ile esitleniyor ve sistem karar yapılarıyla kontrol ediliyor, eger girili email e dair eşleşen görev her ne ise ve email ile şifre sistemdeki ile dogrulanıyorsa kişi görevine göre gorebildiği formlara yetki saglıyor,
+        //Emailler ve sifreler database ve dısarıdan girilen ile esitleniyor ve sistem karar yapılarıyla kontrol ediliyor, eger text boxlara veri girildiyse, girilen verilerdeki email ve sifreler sistemdekiyle eslesiyor mu diye kontrol ediliyor daha sonra bu emaillerin eslestiği gorevlere gore formlara yonlendiriliyor 
         BilgeHotelContext db = new BilgeHotelContext();
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace Crud_UI.Forms
 
 
 
-                    else if (calisan.Gorev == "Satış yöneticisi")
+                    else if (calisan.Gorev == "Satış/Otel yöneticisi")
                     {
 
                         SatisForm satform = new SatisForm();

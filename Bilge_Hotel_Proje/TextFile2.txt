@@ -1,0 +1,11 @@
+﻿--Data Access Layerda 5 tane classımız var(hopefully,finally) 
+
+
+
+--Login
+
+Emailler ve sifreler database ve dısarıdan girilen ile esitleniyor ve sistem karar yapılarıyla kontrol ediliyor, eger text boxlara veri girildiyse, girilen verilerdeki email ve sifreler sistemdekiyle eslesiyor mu diye kontrol ediliyor daha sonra bu emaillerin eslestiği gorevlere gore formlara yonlendiriliyor 
+
+
+
+İnsan Kaynakları Yöneticisi, 
