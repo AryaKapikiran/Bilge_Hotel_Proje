@@ -1,4 +1,4 @@
-﻿using BLL.Concrete;
+﻿
 using BLL.Repository;
 using DAL.Entity;
 using System;
@@ -21,6 +21,7 @@ namespace Crud_UI.Forms
         }
         BaseRepository<Musteri> musteriRepository =new BaseRepository<Musteri>();
         
+        
 
         private void MusteriListele()
         {
@@ -37,7 +38,7 @@ namespace Crud_UI.Forms
                 lvi.SubItems.Add(musteri.TCKN);
                 lvi.SubItems.Add(musteri.Email);
                 lvi.SubItems.Add(musteri.TelNo);
-              
+                
                 listView1.Items.Add(lvi);
             }
         }
@@ -45,5 +46,7 @@ namespace Crud_UI.Forms
         {
             MusteriListele();
         }
+
+        
     }
 }

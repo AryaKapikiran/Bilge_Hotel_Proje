@@ -43,7 +43,7 @@ namespace DAL.Entity
             get
 
             {
-                if (Gorev.Contains("yönetici"))
+                if (Gorev.Contains("yonetici"))
                 {
                     _maas = Ucret;
                     SaatSayisi = 0;

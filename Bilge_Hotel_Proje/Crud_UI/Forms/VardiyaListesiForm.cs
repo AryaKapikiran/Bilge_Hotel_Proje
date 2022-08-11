@@ -52,5 +52,12 @@ namespace Crud_UI.Forms
         {
             VardiyaListele();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
+        }
     }
 }

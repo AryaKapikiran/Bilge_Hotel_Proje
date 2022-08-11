@@ -57,8 +57,11 @@ namespace Crud_UI.Forms
             childForm(new VardiyaForm());
         }
 
-       
-
-        
+        private void returnToLoginFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
+        }
     }
 }

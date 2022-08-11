@@ -84,14 +84,14 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(48, 48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(395, 571);
+            this.groupBox1.Size = new System.Drawing.Size(395, 546);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Çalışanlar";
             // 
             // txtgorev
             // 
-            this.txtgorev.Location = new System.Drawing.Point(161, 372);
+            this.txtgorev.Location = new System.Drawing.Point(150, 372);
             this.txtgorev.Name = "txtgorev";
             this.txtgorev.Size = new System.Drawing.Size(215, 26);
             this.txtgorev.TabIndex = 20;
@@ -202,7 +202,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(271, 430);
+            this.btnDelete.Location = new System.Drawing.Point(272, 430);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 45);
             this.btnDelete.TabIndex = 6;

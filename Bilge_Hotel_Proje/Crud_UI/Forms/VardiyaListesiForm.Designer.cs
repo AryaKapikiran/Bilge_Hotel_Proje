@@ -35,6 +35,7 @@
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvVardiya
@@ -85,11 +86,22 @@
             this.columnHeader11.Text = "Vardiya";
             this.columnHeader11.Width = 170;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(914, 551);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 56);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Return to Login Form";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VardiyaListesiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1186, 618);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lvVardiya);
             this.Name = "VardiyaListesiForm";
             this.Text = "VardiyaListesiForm";
@@ -107,5 +119,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.Button button1;
     }
 }

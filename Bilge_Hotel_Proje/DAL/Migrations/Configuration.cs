@@ -18,11 +18,6 @@
         protected override void Seed(DAL.Context.BilgeHotelContext context)
         {
            
-            
-
-
-           
-
             //Calisanlar
             List<Calisan> calisanlar = new List<Calisan>()
             {

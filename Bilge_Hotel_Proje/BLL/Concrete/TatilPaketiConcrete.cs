@@ -8,9 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Concrete
 {
-    public class MusteriService:BaseRepository<Musteri>
+    public class TatilPaketiConcrete:BaseRepository<TatilPaketi>
     {
-
-        
     }
 }

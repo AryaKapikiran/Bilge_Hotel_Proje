@@ -13,12 +13,8 @@ namespace DAL.Entity
         public Rezervasyon()
         {
             RezervasyonTarihi = DateTime.Now;
+            GunSayisi = 1;
             
-            
-            
-            
-
-
         }
         public int RezervasyonID { get; set; }
 
@@ -83,8 +79,7 @@ namespace DAL.Entity
         
         }
 
-        //Map
-
+        
         
     }
 }

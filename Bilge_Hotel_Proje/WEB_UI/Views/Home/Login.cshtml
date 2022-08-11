@@ -1,0 +1,46 @@
+﻿@model WEB_UI.Models.LoginVM
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Login</h2>
+
+<div class="row" style="margin-top:30px;">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">
+                <h2>
+                    Lütfen Giriş Yapınız
+                </h2>
+                <div class="card-body">
+
+                    @if (TempData["error"] != null)
+                    {
+                        <h2 style="color:red;">@TempData["error"]</h2>
+                    }
+
+                    <form method="post">
+                        <div>
+                            <label>Email:</label>
+                            @Html.ValidationMessageFor(x => x.Email)
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                        </div>
+                        <div>
+                            <label>Password:</label>
+                            @Html.ValidationMessageFor(x => x.Password)
+                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-top:50px; float:right;">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

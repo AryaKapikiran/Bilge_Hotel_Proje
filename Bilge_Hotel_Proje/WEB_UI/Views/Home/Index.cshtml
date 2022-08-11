@@ -1,0 +1,141 @@
+﻿@model WEB_UI.Models.CardItem
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    if (TempData["error"] != null)
+    {
+        <div class="alert alert-danger">
+            <span>@TempData["error"]</span>
+        </div>
+    }
+}
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Rezervasyon</h1>
+            <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+        </div>
+    </div>
+</header>
+
+<form method="post">
+    <div class="col-sm-3">
+        <h5>Odalar</h5>
+        @foreach (var oda in TempData["Odalar"] as List<DAL.Entity.Oda>)
+        {
+            <div class="col mb-3">
+                <div class="card h-2">
+                    <!--  image-->
+                    <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!--  name-->
+                            
+                            <h5 class="fw-bolder">@oda.OdaTipiName</h5>
+                            <!--  price-->
+                            @oda.Fiyat
+                        </div>
+                        <div class="text-center">
+                            <span>@oda.OdaDurumu.ToString()</span>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        @*@Html.ActionLink("Oda Seç", "AddToCart", new { id = oda.OdaID }, new { @class = "btn btn-outline-dark mt-auto" })*@
+                        <input type="submit" name="OdaID" value="@oda.OdaID" class="form-control" /> />
+                        @*<button type="submit">Oda Seç</button>>*@
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="col-sm-3">
+
+        <h5>Tatil Paketleri</h5>
+
+        @foreach (var paket in TempData["TatilPaketleri"] as List<DAL.Entity.TatilPaketi>)
+        {
+            <div class="col mb-3">
+                <div class="card h-2">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">@paket.TatilPaketiName</h5>
+                            <!-- Product price-->
+                            @paket.Fiyat
+                        <input type="submit" name="TatilPaketiID" value="@paket.TatilPaketiID" class="form-control" />
+
+                           @paket.TatilPaketiID
+                            
+                        </div>
+
+                    </div>
+
+                    @*@Html.ActionLink("Tatil Paketi Seç", "AddToCart", new { id = paket.TatilPaketiID }, new { @class = "btn btn-outline-dark mt-auto" })*@
+
+                    @*<button type="submit">Tatil Paketi Seç</button>*@
+
+                </div>
+            </div>
+
+        }
+
+    </div>
+
+    <section>
+        <div class="text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <div class="col-lg-6 mx-auto">
+                    <h3 style="color:midnightblue">TARİH SEÇİNİZ</h3>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+                        <div class="card-body">
+
+                            Giriş:
+                            <br />
+                            <input type="date" name="KonaklamaBaslangic" class="form-control" />
+                            <br />
+                            Çıkış:
+                            <br />
+                            <input type="date" name="KonaklamaBitis" class="form-control" />
+                            <br /><br />
+
+                            <button type="submit" class="btn btn-primary btn-block mt-3">Tarih Seç</button>
+
+                            <div class="text-center">  @Html.ActionLink("Rezervasyonu Tamamla", "AddToCard", new { @class = "btn btn-outline-dark mt-auto" })
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+</form>>
+
+
+
+
+
+
+
+
+

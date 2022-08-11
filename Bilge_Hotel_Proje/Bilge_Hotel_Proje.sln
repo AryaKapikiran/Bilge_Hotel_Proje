@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TextFile2.txt = TextFile2.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_UI", "WEB_UI\WEB_UI.csproj", "{69359EE4-EDA8-48A3-85B3-A841A7D200DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{584993F8-A0AE-40D8-B420-9AC9EFDE6B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584993F8-A0AE-40D8-B420-9AC9EFDE6B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584993F8-A0AE-40D8-B420-9AC9EFDE6B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69359EE4-EDA8-48A3-85B3-A841A7D200DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69359EE4-EDA8-48A3-85B3-A841A7D200DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69359EE4-EDA8-48A3-85B3-A841A7D200DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69359EE4-EDA8-48A3-85B3-A841A7D200DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

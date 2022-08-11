@@ -42,9 +42,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Location = new System.Drawing.Point(196, 38);
+            this.groupBox1.Location = new System.Drawing.Point(137, 35);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1394, 614);
+            this.groupBox1.Size = new System.Drawing.Size(1394, 656);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteriler";

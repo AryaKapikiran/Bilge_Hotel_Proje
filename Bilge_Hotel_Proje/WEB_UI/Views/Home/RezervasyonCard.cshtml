@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "RezervasyonCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    WEB_UI.Models.Card rez = Session["scart"] as WEB_UI.Models.Card;
+    decimal? totalPrice = 0;
+}
+
+<h2>RezervasyonCard</h2>
+
+
+
+
+<div>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Tatil Paketi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in rez.myCard)
+            {
+                totalPrice += item.ToplamFiyat;
+                <tr>
+                    <td>@item.TatilPaketiID</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Oda Tipi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in rez.myCard)
+            {
+                totalPrice += item.ToplamFiyat;
+                <tr>
+                    <td>@item.OdaID</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Giriş ve Çıkış Tarihleri</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in rez.myCard)
+            {
+                totalPrice += item.ToplamFiyat;
+                <tr>
+                    <td>@item.KonaklamaBaslangic</td>
+                    <td>@item.KonaklamaBitis</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-between">
+                @*verileri yan yana yazdirmamizi saglar*@
+                <h5>Genel Toplam: </h5>
+                <h5> @totalPrice TL</h5>
+            </div>
+            <div class="col-md-12 mt-5">
+                @Html.ActionLink("Rezervasyonu Tamamla", "CompleteCart", "Home", null, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Devam Et", "Index", "Home", null, new { @class = "btn" })
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
