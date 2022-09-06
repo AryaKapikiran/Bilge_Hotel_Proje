@@ -39,6 +39,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,12 +109,13 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(446, 31);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(700, 434);
+            this.listView1.Size = new System.Drawing.Size(1304, 434);
             this.listView1.TabIndex = 9;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -138,11 +140,16 @@
             this.columnHeader4.Text = "Fiyat";
             this.columnHeader4.Width = 139;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Oda Ozellikleri";
+            this.columnHeader5.Width = 575;
+            // 
             // OdaDurumuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 773);
+            this.ClientSize = new System.Drawing.Size(2076, 773);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.groupBox3);
             this.Name = "OdaDurumuForm";
@@ -166,5 +173,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

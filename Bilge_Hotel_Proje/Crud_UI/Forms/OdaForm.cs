@@ -31,6 +31,7 @@ namespace Crud_UI.Forms
             cmbOdaTipi.Text = "";
             txtid.Text = "";
             txtfiyat.Text = "";
+            txtodaOzellikleri.Text = "";
             List<Oda> odalar = odaRepository.GetList();
             List<OdaDurumu> odadurumları = Enum.GetValues(typeof(OdaDurumu)).Cast<OdaDurumu>().ToList();
             List<OdaTipiName> odatipleri = Enum.GetValues(typeof(OdaTipiName)).Cast<OdaTipiName>().ToList();
@@ -41,6 +42,7 @@ namespace Crud_UI.Forms
                 lvi.SubItems.Add(oda.OdaDurumu.ToString());
                 lvi.SubItems.Add(oda.OdaTipiName.ToString());
                 lvi.SubItems.Add(oda.Fiyat.ToString());
+                lvi.SubItems.Add(oda.OdaOzelligi);
                 listView1.Items.Add(lvi);
             }
            
@@ -75,6 +77,7 @@ namespace Crud_UI.Forms
                 oda.OdaDurumu = (OdaDurumu)cmbOdaDurumu.SelectedIndex;
                 oda.OdaTipiName = (OdaTipiName)cmbOdaTipi.SelectedIndex;
                 oda.Fiyat = Convert.ToInt32(txtfiyat.Text);
+                oda.OdaOzelligi = txtodaOzellikleri.Text;
 
                 string result = odaRepository.Create(oda);
                 MessageBox.Show(result);
@@ -106,6 +109,10 @@ namespace Crud_UI.Forms
                 if(cmbOdaTipi.Text!="")
                 {
                     updated.OdaTipiName= (OdaTipiName)cmbOdaTipi.SelectedIndex;
+                }
+                if(txtodaOzellikleri.Text!="")
+                {
+                    updated.OdaOzelligi = txtodaOzellikleri.Text;
                 }
                string result = odaRepository.Update(updated);
                 MessageBox.Show(result);

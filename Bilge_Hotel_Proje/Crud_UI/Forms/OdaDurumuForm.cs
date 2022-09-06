@@ -41,6 +41,7 @@ namespace Crud_UI.Forms
                 lvi.SubItems.Add(oda.OdaDurumu.ToString());
                 lvi.SubItems.Add(oda.OdaTipiName.ToString());
                 lvi.SubItems.Add(oda.Fiyat.ToString());
+                lvi.SubItems.Add(oda.OdaOzelligi.ToString());
                 listView1.Items.Add(lvi);
             }
 

@@ -18,6 +18,8 @@ namespace DAL.Entity
 
         public decimal Fiyat { get; set; }
 
+        public string OdaOzelligi { get; set; }
+
         public List<Rezervasyon> Rezervasyonlar { get; set; }
 
 

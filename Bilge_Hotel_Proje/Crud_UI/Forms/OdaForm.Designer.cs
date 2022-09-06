@@ -31,10 +31,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbOdaTipi = new System.Windows.Forms.ComboBox();
+            this.cmbOdaDurumu = new System.Windows.Forms.ComboBox();
             this.txtfiyat = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,13 +45,16 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbOdaDurumu = new System.Windows.Forms.ComboBox();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtodaOzellikleri = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txtodaOzellikleri);
+            this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.cmbOdaTipi);
             this.groupBox3.Controls.Add(this.cmbOdaDurumu);
@@ -63,7 +68,7 @@
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(23, 29);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(392, 377);
+            this.groupBox3.Size = new System.Drawing.Size(392, 628);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Odalar";
@@ -86,6 +91,14 @@
             this.cmbOdaTipi.Size = new System.Drawing.Size(166, 28);
             this.cmbOdaTipi.TabIndex = 13;
             // 
+            // cmbOdaDurumu
+            // 
+            this.cmbOdaDurumu.FormattingEnabled = true;
+            this.cmbOdaDurumu.Location = new System.Drawing.Point(162, 113);
+            this.cmbOdaDurumu.Name = "cmbOdaDurumu";
+            this.cmbOdaDurumu.Size = new System.Drawing.Size(166, 28);
+            this.cmbOdaDurumu.TabIndex = 12;
+            // 
             // txtfiyat
             // 
             this.txtfiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -96,7 +109,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(281, 301);
+            this.btnDelete.Location = new System.Drawing.Point(247, 469);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 45);
             this.btnDelete.TabIndex = 10;
@@ -106,7 +119,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(147, 301);
+            this.btnUpdate.Location = new System.Drawing.Point(136, 469);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(105, 45);
             this.btnUpdate.TabIndex = 9;
@@ -116,13 +129,23 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(11, 301);
+            this.btnAdd.Location = new System.Drawing.Point(11, 469);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(119, 45);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 29);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Oda Durumu";
             // 
             // label1
             // 
@@ -158,12 +181,13 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(470, 29);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(700, 434);
+            this.listView1.Size = new System.Drawing.Size(1241, 434);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -188,29 +212,34 @@
             this.columnHeader4.Text = "Fiyat";
             this.columnHeader4.Width = 139;
             // 
-            // label3
+            // columnHeader5
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 29);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Oda Durumu";
+            this.columnHeader5.Text = "Oda Ozellikleri";
+            this.columnHeader5.Width = 548;
             // 
-            // cmbOdaDurumu
+            // label5
             // 
-            this.cmbOdaDurumu.FormattingEnabled = true;
-            this.cmbOdaDurumu.Location = new System.Drawing.Point(162, 113);
-            this.cmbOdaDurumu.Name = "cmbOdaDurumu";
-            this.cmbOdaDurumu.Size = new System.Drawing.Size(166, 28);
-            this.cmbOdaDurumu.TabIndex = 12;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 293);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(173, 29);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Oda Ozellikleri";
+            // 
+            // txtodaOzellikleri
+            // 
+            this.txtodaOzellikleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtodaOzellikleri.Location = new System.Drawing.Point(185, 293);
+            this.txtodaOzellikleri.Name = "txtodaOzellikleri";
+            this.txtodaOzellikleri.Size = new System.Drawing.Size(166, 35);
+            this.txtodaOzellikleri.TabIndex = 16;
             // 
             // OdaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1306, 708);
+            this.ClientSize = new System.Drawing.Size(1742, 708);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.groupBox3);
             this.Name = "OdaForm";
@@ -241,5 +270,8 @@
         private System.Windows.Forms.ComboBox cmbOdaTipi;
         private System.Windows.Forms.ComboBox cmbOdaDurumu;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtodaOzellikleri;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

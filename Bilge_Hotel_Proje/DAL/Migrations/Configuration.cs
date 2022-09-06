@@ -81,11 +81,17 @@
             //Oda Tipi
             List<Oda> odalar = new List<Oda>()
            {
-               new Oda{OdaTipiName= Enums.OdaTipiName.TekKisilik,  Fiyat=200,OdaDurumu=Enums.OdaDurumu.Musait},
-               new Oda{OdaTipiName= Enums.OdaTipiName.CiftKisilik, Fiyat=300,OdaDurumu=Enums.OdaDurumu.Musait},
-               new Oda{OdaTipiName= Enums.OdaTipiName.UcKisilik,   Fiyat=400,OdaDurumu=Enums.OdaDurumu.Musait},
-               new Oda{OdaTipiName= Enums.OdaTipiName.DortKisilik, Fiyat=500,OdaDurumu=Enums.OdaDurumu.Musait},
-               new Oda{OdaTipiName= Enums.OdaTipiName.KralDairesi, Fiyat=100,OdaDurumu=Enums.OdaDurumu.Musait}
+               new Oda{OdaTipiName= Enums.OdaTipiName.TekKisilik,  Fiyat=200,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Birinci Kat,Tek Yatak, Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.TekKisilik,  Fiyat=200,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="İkinci Kat,Tek Yatak, Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.CiftKisilik, Fiyat=300,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="İkinci Kat,İki Ayrı Tek Yatak,Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.CiftKisilik, Fiyat=300,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="İkinci Kat,İki Ayrı Tek Yatak,Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.CiftKisilik, Fiyat=300,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Üçüncü Kat,Duble Yatak,Balkonlu,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.CiftKisilik, Fiyat=300,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Dördüncü Kat,Duble Yatak,Balkonlu,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.UcKisilik,   Fiyat=400,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Birinci Kat,Üç ayrı yatak Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+                new Oda{OdaTipiName= Enums.OdaTipiName.UcKisilik,   Fiyat=400,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Üçüncü Kat,Bir Duble bir tekli yatak Balkonlu,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.UcKisilik,   Fiyat=400,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Birinci Kat,Üç ayrı yatak Balkonsuz,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.DortKisilik, Fiyat=500,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Dördüncü Kat,Bir adet duble yatak ve iki ayrı yatak, Balkonlu,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"},
+               new Oda{OdaTipiName= Enums.OdaTipiName.KralDairesi, Fiyat=100,OdaDurumu=Enums.OdaDurumu.Musait,OdaOzelligi="Dördüncü Kat,2 ayrı oda ve bir salon,Jakuzi,Balkonlu,minibar , klima, tv, saç kurutma makinesi, kablosuz internet"}
                                                                              
            };
 
