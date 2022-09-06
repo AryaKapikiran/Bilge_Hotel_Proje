@@ -20,6 +20,7 @@ namespace DAL.Map
             Property(x => x.TatilPaketiID).IsRequired();
             Property(x => x.KonaklamaBitis).IsRequired();
             Property(x => x.GunSayisi).IsRequired();
+           
             
 
 

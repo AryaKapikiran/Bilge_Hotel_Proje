@@ -66,7 +66,7 @@ namespace Crud_UI.Forms
         //ekleme
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            
+                        
             try
             {
 

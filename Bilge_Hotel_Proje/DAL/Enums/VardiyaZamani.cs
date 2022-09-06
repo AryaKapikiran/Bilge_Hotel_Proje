@@ -11,6 +11,7 @@ namespace DAL.Enums
         Sabah,
         Ogle,
         Aksam,
-        TamZamanli
+        TamZamanli,
+        Izınli
     }
 }

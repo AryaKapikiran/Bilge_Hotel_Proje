@@ -71,5 +71,15 @@ namespace Crud_UI.Forms
             loginForm.Show();
             this.Close();
         }
+
+        private void resepsiyonTaraflıRezervasyonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childForm(new RezervasyonYapForm());
+        }
+
+        private void tatilPaketleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childForm(new TatilPaketBilgi());
+        }
     }
 }

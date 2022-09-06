@@ -56,7 +56,7 @@ namespace DAL.Entity
 
        
 
-        public int MusteriID { get; set; }
+        public int? MusteriID { get; set; }
        
 
         private decimal _toplamFiyat;

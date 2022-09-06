@@ -34,6 +34,8 @@
             this.müşteriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vardiyalarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToLoginFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tatilPaketleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +48,9 @@
             this.odaDurumuToolStripMenuItem,
             this.müşteriToolStripMenuItem,
             this.vardiyalarToolStripMenuItem,
-            this.returnToLoginFormToolStripMenuItem});
+            this.returnToLoginFormToolStripMenuItem,
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem,
+            this.tatilPaketleriToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1441, 33);
@@ -88,6 +92,20 @@
             this.returnToLoginFormToolStripMenuItem.Text = "Return to Login Form";
             this.returnToLoginFormToolStripMenuItem.Click += new System.EventHandler(this.returnToLoginFormToolStripMenuItem_Click);
             // 
+            // resepsiyonTaraflıRezervasyonToolStripMenuItem
+            // 
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem.Name = "resepsiyonTaraflıRezervasyonToolStripMenuItem";
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem.Size = new System.Drawing.Size(270, 29);
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem.Text = "Resepsiyon Taraflı Rezervasyon";
+            this.resepsiyonTaraflıRezervasyonToolStripMenuItem.Click += new System.EventHandler(this.resepsiyonTaraflıRezervasyonToolStripMenuItem_Click);
+            // 
+            // tatilPaketleriToolStripMenuItem
+            // 
+            this.tatilPaketleriToolStripMenuItem.Name = "tatilPaketleriToolStripMenuItem";
+            this.tatilPaketleriToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.tatilPaketleriToolStripMenuItem.Text = "Tatil Paketleri";
+            this.tatilPaketleriToolStripMenuItem.Click += new System.EventHandler(this.tatilPaketleriToolStripMenuItem_Click);
+            // 
             // ResepsiyonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -113,5 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem müşteriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vardiyalarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnToLoginFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem resepsiyonTaraflıRezervasyonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tatilPaketleriToolStripMenuItem;
     }
 }

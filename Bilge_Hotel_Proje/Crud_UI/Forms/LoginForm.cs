@@ -74,6 +74,8 @@ namespace Crud_UI.Forms
                         this.Hide();
                     }
 
+                    
+
                     else
                     {
                         MessageBox.Show("Diğer alanlara giriş yetkiniz yok, bilgilendirme formuna aktarılıyorsunuz");
