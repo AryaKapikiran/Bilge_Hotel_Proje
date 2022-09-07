@@ -46,20 +46,20 @@ namespace DAL.Entity
                 if (Gorev.Contains("yonetici"))
                 {
                     _maas = Ucret;
-                    SaatSayisi = 0;
+                    SaatSayisi = 1;
 
 
                 }
-                else if (Gorev.Contains("yonetici"))
+                else if (Gorev.Contains("yönetici"))
                 {
                     _maas = Ucret;
-                    SaatSayisi = 0;
+                    SaatSayisi = 1;
 
                 }
                 else if (Gorev.Contains("sorumlusu"))
                 {
                     _maas = Ucret;
-                    SaatSayisi = 0;
+                    SaatSayisi = 1;
                 }
 
                 else

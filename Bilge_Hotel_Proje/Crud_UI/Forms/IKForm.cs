@@ -63,5 +63,10 @@ namespace Crud_UI.Forms
             loginForm.Show();
             this.Close();
         }
+
+        private void odalarVeMusterilerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childForm(new MusteriOda());
+        }
     }
 }

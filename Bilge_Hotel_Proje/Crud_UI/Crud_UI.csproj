@@ -81,6 +81,12 @@
     <Compile Include="Forms\MusteriForm.Designer.cs">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MusteriOda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MusteriOda.Designer.cs">
+      <DependentUpon>MusteriOda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OdaDurumuForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MusteriOda.resx">
+      <DependentUpon>MusteriOda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OdaDurumuForm.resx">
       <DependentUpon>OdaDurumuForm.cs</DependentUpon>

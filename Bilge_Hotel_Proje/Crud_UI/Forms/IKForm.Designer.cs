@@ -32,6 +32,7 @@
             this.çalışanlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vardiyalarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToLoginFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.odalarVeMusterilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +43,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.çalışanlarToolStripMenuItem,
             this.vardiyalarToolStripMenuItem,
-            this.returnToLoginFormToolStripMenuItem});
+            this.returnToLoginFormToolStripMenuItem,
+            this.odalarVeMusterilerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1526, 33);
@@ -70,6 +72,13 @@
             this.returnToLoginFormToolStripMenuItem.Text = "Return to Login Form";
             this.returnToLoginFormToolStripMenuItem.Click += new System.EventHandler(this.returnToLoginFormToolStripMenuItem_Click);
             // 
+            // odalarVeMusterilerToolStripMenuItem
+            // 
+            this.odalarVeMusterilerToolStripMenuItem.Name = "odalarVeMusterilerToolStripMenuItem";
+            this.odalarVeMusterilerToolStripMenuItem.Size = new System.Drawing.Size(187, 29);
+            this.odalarVeMusterilerToolStripMenuItem.Text = "Odalar ve Musteriler";
+            this.odalarVeMusterilerToolStripMenuItem.Click += new System.EventHandler(this.odalarVeMusterilerToolStripMenuItem_Click);
+            // 
             // IKForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -93,5 +102,6 @@
         private System.Windows.Forms.ToolStripMenuItem çalışanlarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vardiyalarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnToLoginFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem odalarVeMusterilerToolStripMenuItem;
     }
 }

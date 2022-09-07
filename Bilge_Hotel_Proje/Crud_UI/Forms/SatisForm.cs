@@ -77,5 +77,10 @@ namespace Crud_UI.Forms
             loginForm.Show();
             this.Close();
         }
+
+        private void musteriKayıtlarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childForm(new MusteriOda());
+        }
     }
 }

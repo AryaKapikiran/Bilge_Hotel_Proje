@@ -36,6 +36,7 @@
             this.returnToLoginFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resepsiyonTaraflıRezervasyonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tatilPaketleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.musteriOdalarıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.vardiyalarToolStripMenuItem,
             this.returnToLoginFormToolStripMenuItem,
             this.resepsiyonTaraflıRezervasyonToolStripMenuItem,
-            this.tatilPaketleriToolStripMenuItem});
+            this.tatilPaketleriToolStripMenuItem,
+            this.musteriOdalarıToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1441, 33);
@@ -106,6 +108,13 @@
             this.tatilPaketleriToolStripMenuItem.Text = "Tatil Paketleri";
             this.tatilPaketleriToolStripMenuItem.Click += new System.EventHandler(this.tatilPaketleriToolStripMenuItem_Click);
             // 
+            // musteriOdalarıToolStripMenuItem
+            // 
+            this.musteriOdalarıToolStripMenuItem.Name = "musteriOdalarıToolStripMenuItem";
+            this.musteriOdalarıToolStripMenuItem.Size = new System.Drawing.Size(149, 29);
+            this.musteriOdalarıToolStripMenuItem.Text = "Musteri Odaları";
+            this.musteriOdalarıToolStripMenuItem.Click += new System.EventHandler(this.musteriOdalarıToolStripMenuItem_Click);
+            // 
             // ResepsiyonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -133,5 +142,6 @@
         private System.Windows.Forms.ToolStripMenuItem returnToLoginFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resepsiyonTaraflıRezervasyonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tatilPaketleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem musteriOdalarıToolStripMenuItem;
     }
 }

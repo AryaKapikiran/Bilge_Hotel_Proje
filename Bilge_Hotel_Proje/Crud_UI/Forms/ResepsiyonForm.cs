@@ -81,5 +81,10 @@ namespace Crud_UI.Forms
         {
             childForm(new TatilPaketBilgi());
         }
+
+        private void musteriOdalarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            childForm(new MusteriOda());
+        }
     }
 }
