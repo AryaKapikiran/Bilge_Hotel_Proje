@@ -39,6 +39,8 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,12 +65,14 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8,
-            this.columnHeader9});
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11});
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(224, 42);
+            this.listView1.Location = new System.Drawing.Point(195, 35);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1785, 512);
+            this.listView1.Size = new System.Drawing.Size(2235, 512);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -118,11 +122,21 @@
             this.columnHeader9.Text = "TelNo";
             this.columnHeader9.Width = 196;
             // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Tatil Giriş";
+            this.columnHeader10.Width = 164;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Tatil Çıkış";
+            this.columnHeader11.Width = 238;
+            // 
             // MusteriOda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1946, 873);
+            this.ClientSize = new System.Drawing.Size(2460, 873);
             this.Controls.Add(this.groupBox1);
             this.Name = "MusteriOda";
             this.Text = "MusteriOda";
@@ -145,5 +159,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
     }
 }

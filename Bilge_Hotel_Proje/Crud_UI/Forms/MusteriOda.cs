@@ -44,6 +44,8 @@ namespace Crud_UI.Forms
                 lvi.SubItems.Add(rezervasyon.RezervasyonID.ToString());
                 lvi.SubItems.Add(musteri.TCKN).ToString();
                 lvi.SubItems.Add(musteri.TelNo);
+                lvi.SubItems.Add(rezervasyon.KonaklamaBaslangic.ToString());
+                lvi.SubItems.Add(rezervasyon.KonaklamaBitis.ToString());
                 listView1.Items.Add(lvi);
             }
 

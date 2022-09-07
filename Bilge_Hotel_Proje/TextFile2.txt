@@ -11,6 +11,8 @@ Emailler ve sifreler database ve dısarıdan girilen ile esitleniyor ve sistem k
 ----------------------------------------------------------------------------------------------------------------
 Giriş Yaparken sistemde kayıtlı olan personel emaili ve şifresi(herkesin görebildiği alan görevine gore degisiyor);
 
+--Butun yoneticiler ve resepsiyon sorumluları, reklam ve guvenlik sebepleriyle hangi odada hangi musterinin kaldıgını ve rezervasyonlarını gorebiliyor
+
 İnsan Kaynakları Yöneticisi,(Çalışanları kontrol eder, ise alım cıkarımlarda gerekli işlemleri yapma yetkisine sahiptir. Vardiyaları yönetir ve vardiya listesini güncelleyebilir)
 s.alkomut@bilgeotel.com
 1234
