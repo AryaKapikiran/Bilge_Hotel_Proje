@@ -1,4 +1,5 @@
 ﻿
+
 using DAL.Entity;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,11 @@ namespace WEB_UI.Models
             get
             {
                 
+                
+                //if((KonaklamaBaslangic.Day - RezervasyonTarihi.Day)>30)
+                //{
+                //    _toplamFiyat= ((OdaFiyati + TatilPaketiFiyati) * GunSayisi) * 0,18;
+                //}
 
                 _toplamFiyat = (OdaFiyati + TatilPaketiFiyati) * GunSayisi;
 

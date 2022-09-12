@@ -15,6 +15,7 @@ namespace WEB_UI.Controllers
         BilgeHotelContext db = new BilgeHotelContext();
         MusteriConcrete musteriConcrete = new MusteriConcrete();
         OdaConcrete odaConcrete = new OdaConcrete();
+        
         public ActionResult Index()
         {
             TempData["Odalar"] = db.Odalar.ToList();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace WEB_UI.Models
     {
 
         Dictionary<int, CardItem> _myCard = new Dictionary<int, CardItem>();
+        
 
         public List<CardItem> myCard
         {
